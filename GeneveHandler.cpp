@@ -1,7 +1,6 @@
-/*
- * Copyright Amazon.com, Inc. or its affiliates. This material is AWS Content under the AWS Enterprise Agreement 
- * or AWS Customer Agreement (as applicable) and is provided under the AWS Intellectual Property License.
- */
+// Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+// SPDX-License-Identifier: MIT-0
+
 /**
  * Handles all of our Geneve tunnel functions:
  * - Launches a UDPPacketReceiver to receive packets on port 6081
@@ -21,7 +20,7 @@
 
 using namespace std::string_literals;
 
-#define GWLB_MTU           8500         // MTU of customer payload packets that can be processed
+#define GWLB_MTU           8596         // MTU of customer payload packets that can be processed
 #define GENEVE_PORT        6081         // UDP port number that GENEVE uses by standard
 
 // Define the thread-local cache declared in the header
